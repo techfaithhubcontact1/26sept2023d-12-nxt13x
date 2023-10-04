@@ -5,7 +5,6 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 
 // Import {someNamedImpor} from 'somelibrary'
-// import { useEffect } from "react";
 
 import Footer from "@/components/layouts/Footer";
 import LeftAside from "@/components/layouts/LeftAside";
@@ -22,10 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) { // function start
      
     // bootstrap js Imported here
-    // useEffect(() => {
-    //   require("bootstrap/dist/js/bootstrap.bundle.min.js");
-    // }, []);
-
+    
     // function return statement
     return (
       <html lang="en">
