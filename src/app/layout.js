@@ -6,10 +6,12 @@ import { Inter } from 'next/font/google'
 
 // Import {someNamedImpor} from 'somelibrary'
 
-import Footer from "@/components/layouts/Footer";
+
+import Header from "@/components/layouts/Header";
 import LeftAside from "@/components/layouts/LeftAside";
 import RightAside from "@/components/layouts/RightAside";
-import Header from "@/components/layouts/header";
+import Footer from "@/components/layouts/Footer";
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,16 +28,18 @@ export default function RootLayout({ children }) { // function start
     return (
       <html lang="en">
         <body className={inter.className}>
-        <div className="container-fluid">
-          <Header />
-              <main>
-                <div className="row">
-                  <LeftAside />
-            {children}
-            <RightAside />
-                </div>
-              </main>
-              <Footer />
+          <div className="container-fluid">
+            <Header />
+                <main>
+                  <div className="row">
+                    <LeftAside />
+
+              {children}
+              
+                    <RightAside />
+                  </div>
+                </main>
+                <Footer />
           </div>
 
         </body>
